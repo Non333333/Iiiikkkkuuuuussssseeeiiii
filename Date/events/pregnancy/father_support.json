@@ -1,0 +1,45 @@
+{
+  "id": "preg_father_support",
+  "phase": "pregnancy",
+  "roles": [
+    "father"
+  ],
+  "minWeek": 8,
+  "maxWeek": 36,
+  "weight": 4,
+  "title": "妻が少し疲れている",
+  "text": "帰宅すると、妻はいつもより疲れているように見えた。",
+  "choices": [
+    {
+      "label": "家事を代わる",
+      "hint": "家庭の負担を減らす。",
+      "effects": {
+        "partnerTrust": 6,
+        "familyStability": 5,
+        "cleanliness": 4,
+        "homeStress": -4
+      },
+      "record": "疲れていた妻に代わって家事をした。"
+    },
+    {
+      "label": "今日は自分も疲れたので休む",
+      "hint": "何もしない。",
+      "effects": {
+        "partnerTrust": -2,
+        "homeStress": 2
+      },
+      "record": "妻も疲れていたが、自分も休むことにした。"
+    },
+    {
+      "label": "家事ができていないことを責める",
+      "hint": "家庭内の緊張が高まる。",
+      "effects": {
+        "partnerTrust": -10,
+        "familyStability": -7,
+        "homeStress": 9
+      },
+      "record": "疲れている妻に、家事ができていないことを強く責めた。",
+      "discover": "支配的な父親傾向"
+    }
+  ]
+}

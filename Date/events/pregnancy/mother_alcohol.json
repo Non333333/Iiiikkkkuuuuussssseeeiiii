@@ -1,0 +1,41 @@
+{
+  "id": "preg_mother_alcohol",
+  "phase": "pregnancy",
+  "roles": [
+    "mother"
+  ],
+  "minWeek": 12,
+  "maxWeek": 38,
+  "weight": 2,
+  "title": "夜の飲み物",
+  "text": "夕食が終わった。冷蔵庫にはいくつか飲み物が入っている。",
+  "choices": [
+    {
+      "label": "お酒を飲む",
+      "hint": "そのまま次の時間へ進む。",
+      "effects": {
+        "prenatalRisk": 11,
+        "homeStress": -1
+      },
+      "record": "妊娠中に飲酒した。",
+      "discover": "妊娠中の飲酒経験"
+    },
+    {
+      "label": "ノンアルコール飲料にする",
+      "hint": "雰囲気だけ楽しむ。",
+      "effects": {
+        "prenatalCare": 2
+      },
+      "record": "ノンアルコール飲料を選んだ。"
+    },
+    {
+      "label": "水を飲んで寝る",
+      "hint": "早めに休む。",
+      "effects": {
+        "prenatalCare": 3,
+        "homeStress": -2
+      },
+      "record": "水を飲み、早めに休んだ。"
+    }
+  ]
+}

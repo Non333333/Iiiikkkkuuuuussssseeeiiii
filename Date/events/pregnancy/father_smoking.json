@@ -1,0 +1,41 @@
+{
+  "id": "preg_father_smoking",
+  "phase": "pregnancy",
+  "roles": [
+    "father"
+  ],
+  "minWeek": 10,
+  "maxWeek": 38,
+  "weight": 2,
+  "title": "食後の時間",
+  "text": "食後、少しだけ一人になる時間がある。",
+  "choices": [
+    {
+      "label": "部屋でタバコを吸う",
+      "hint": "そのままいつものように過ごす。",
+      "effects": {
+        "prenatalRisk": 5,
+        "cleanliness": -3,
+        "partnerTrust": -3
+      },
+      "record": "妊娠中の妻がいる部屋で喫煙した。",
+      "discover": "家庭内喫煙"
+    },
+    {
+      "label": "外で吸う",
+      "hint": "家の中では吸わない。",
+      "effects": {
+        "prenatalRisk": 1
+      },
+      "record": "タバコは家の外で吸った。"
+    },
+    {
+      "label": "今日は吸わない",
+      "hint": "そのまま別のことをする。",
+      "effects": {
+        "familyStability": 1
+      },
+      "record": "この日はタバコを吸わなかった。"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "preg_couple_argument",
+  "phase": "pregnancy",
+  "minWeek": 18,
+  "maxWeek": 38,
+  "weight": 2,
+  "title": "お金のことで話がこじれた",
+  "text": "家計について話しているうちに、少し空気が悪くなった。",
+  "choices": [
+    {
+      "label": "一度話を切り上げる",
+      "hint": "大きな衝突を避ける。",
+      "effects": {
+        "familyStability": 1,
+        "homeStress": -1
+      },
+      "record": "家計の話は一度切り上げた。"
+    },
+    {
+      "label": "最後まで話し合う",
+      "hint": "うまくいくかは分からない。",
+      "effects": {
+        "partnerTrust": 3,
+        "homeStress": 1
+      },
+      "record": "家計について最後まで話し合った。"
+    },
+    {
+      "label": "怒鳴って終わらせる",
+      "hint": "その場では話が終わる。",
+      "effects": {
+        "partnerTrust": -9,
+        "familyStability": -7,
+        "homeStress": 10
+      },
+      "record": "家計の話の途中で怒鳴り、会話を終わらせた。",
+      "discover": "家庭内の強い口論"
+    }
+  ]
+}

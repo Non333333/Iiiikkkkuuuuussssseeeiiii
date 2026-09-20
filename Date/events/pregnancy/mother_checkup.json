@@ -1,0 +1,33 @@
+{
+  "id": "preg_mother_checkup",
+  "phase": "pregnancy",
+  "roles": [
+    "mother"
+  ],
+  "minWeek": 8,
+  "maxWeek": 36,
+  "weight": 4,
+  "title": "健診の日",
+  "text": "今日は妊婦健診の日。予定どおり病院へ行くことも、後回しにすることもできる。",
+  "choices": [
+    {
+      "label": "予定どおり健診へ行く",
+      "hint": "状態を確認し、必要な対応を受ける。",
+      "effects": {
+        "prenatalCare": 8,
+        "prenatalRisk": -3,
+        "money": -1
+      },
+      "record": "予定どおり妊婦健診を受けた。"
+    },
+    {
+      "label": "今日は行かない",
+      "hint": "時間は空くが、医療的な確認は減る。",
+      "effects": {
+        "prenatalCare": -5,
+        "prenatalRisk": 2
+      },
+      "record": "この日の妊婦健診は見送った。"
+    }
+  ]
+}

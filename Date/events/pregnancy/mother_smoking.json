@@ -1,0 +1,41 @@
+{
+  "id": "preg_mother_smoking",
+  "phase": "pregnancy",
+  "roles": [
+    "mother"
+  ],
+  "minWeek": 10,
+  "maxWeek": 38,
+  "weight": 2,
+  "title": "少し手持ち無沙汰だ",
+  "text": "家で一人になる時間ができた。特別な警告は出ない。いつも通り、次にすることを選ぶ。",
+  "choices": [
+    {
+      "label": "タバコを吸う",
+      "hint": "少し気分転換になる。",
+      "effects": {
+        "prenatalRisk": 9,
+        "homeStress": -1
+      },
+      "record": "妊娠中にタバコを吸った。",
+      "discover": "妊娠中の喫煙経験"
+    },
+    {
+      "label": "飲み物を飲んで休む",
+      "hint": "静かに時間を過ごす。",
+      "effects": {
+        "prenatalCare": 2,
+        "homeStress": -2
+      },
+      "record": "飲み物を飲んで休んだ。"
+    },
+    {
+      "label": "部屋の換気をする",
+      "hint": "家の空気を入れ替える。",
+      "effects": {
+        "cleanliness": 3
+      },
+      "record": "部屋を換気して過ごした。"
+    }
+  ]
+}
