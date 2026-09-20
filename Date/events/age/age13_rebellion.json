@@ -1,0 +1,41 @@
+{
+  "id": "age13_rebellion",
+  "phase": "age",
+  "minAge": 13,
+  "maxAge": 14,
+  "weight": 8,
+  "title": "「ほっといて」",
+  "text": "最近の{name}は以前より口数が減った。今日も話しかけると「ほっといて」と返された。",
+  "choices": [
+    {
+      "label": "今は距離を置く",
+      "hint": "反抗期として見守る。",
+      "effects": {
+        "independence": 4,
+        "rebellion": 1,
+        "parentAttachment": 1
+      },
+      "record": "「ほっといて」と言われ、この日は距離を置いた。"
+    },
+    {
+      "label": "何があったか聞き続ける",
+      "hint": "話してくれる可能性も、うるさがられる可能性もある。",
+      "effects": {
+        "parentDependence": 2,
+        "rebellion": 3
+      },
+      "record": "何があったのか、{name}に何度も尋ねた。"
+    },
+    {
+      "label": "その態度を強く叱る",
+      "hint": "家庭内の緊張が高まる。",
+      "effects": {
+        "rebellion": 8,
+        "homeStress": 7,
+        "parentAttachment": -5
+      },
+      "record": "反抗的な態度を強く叱った。",
+      "discover": "強い反抗期"
+    }
+  ]
+}

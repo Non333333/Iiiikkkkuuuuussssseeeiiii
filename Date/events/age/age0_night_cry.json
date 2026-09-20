@@ -1,0 +1,40 @@
+{
+  "id": "age0_night_cry",
+  "phase": "age",
+  "minAge": 0,
+  "maxAge": 0,
+  "weight": 10,
+  "title": "夜泣き",
+  "text": "夜中、{name}が何度も泣いている。抱き上げても、すぐには泣き止まない。",
+  "choices": [
+    {
+      "label": "何度でも抱いてあやす",
+      "hint": "安心感を優先する。",
+      "effects": {
+        "parentAttachment": 7,
+        "kindness": 1,
+        "homeStress": 3
+      },
+      "record": "夜泣きする{name}を何度も抱いてあやした。"
+    },
+    {
+      "label": "少し様子を見る",
+      "hint": "すぐには手を出さない。",
+      "effects": {
+        "independence": 1,
+        "parentAttachment": -1
+      },
+      "record": "夜泣きする{name}を少し見守った。"
+    },
+    {
+      "label": "苛立って強い声を出す",
+      "hint": "家庭の緊張が増える。",
+      "effects": {
+        "parentAttachment": -5,
+        "homeStress": 7,
+        "selfEsteem": -2
+      },
+      "record": "夜泣きに苛立ち、強い声を出してしまった。"
+    }
+  ]
+}

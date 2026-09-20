@@ -1,0 +1,38 @@
+{
+  "id": "age18_future",
+  "phase": "age",
+  "minAge": 18,
+  "maxAge": 20,
+  "weight": 7,
+  "title": "これからどうする？",
+  "text": "高校卒業後のことを考える時期になった。{name}自身にも、少しずつ希望や迷いがある。",
+  "choices": [
+    {
+      "label": "本人の希望を聞く",
+      "hint": "自分で決める経験を増やす。",
+      "effects": {
+        "independence": 7,
+        "selfEsteem": 4
+      },
+      "record": "進路について、まず{name}本人の希望を聞いた。"
+    },
+    {
+      "label": "安定した道を親が決める",
+      "hint": "失敗は減らしやすいが、自分で決める機会は減る。",
+      "effects": {
+        "parentDependence": 7,
+        "independence": -6
+      },
+      "record": "進路は安定性を優先し、養育者が強く方向を決めた。"
+    },
+    {
+      "label": "好きにすればいいと言う",
+      "hint": "自由だが、支援は少ない。",
+      "effects": {
+        "independence": 4,
+        "parentAttachment": -2
+      },
+      "record": "進路については{name}の好きにすればいいと伝えた。"
+    }
+  ]
+}

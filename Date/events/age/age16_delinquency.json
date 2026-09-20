@@ -1,0 +1,53 @@
+{
+  "id": "age16_delinquency",
+  "phase": "age",
+  "minAge": 15,
+  "maxAge": 17,
+  "weight": 5,
+  "conditions": [
+    {
+      "source": "stats",
+      "key": "rebellion",
+      "gte": 35
+    }
+  ],
+  "title": "帰宅が遅い",
+  "text": "最近、{name}の帰宅が遅い日が増えた。交友関係についても詳しく話したがらない。",
+  "choices": [
+    {
+      "label": "話を聞く機会を作る",
+      "hint": "関係を切らずに状況を探る。",
+      "effects": {
+        "parentAttachment": 3,
+        "delinquency": -2,
+        "selfEsteem": 2
+      },
+      "record": "帰宅が遅い{name}と、落ち着いて話す時間を作った。"
+    },
+    {
+      "label": "門限を厳しくする",
+      "hint": "行動を制限する。",
+      "effects": {
+        "rebellion": 5,
+        "delinquency": 2,
+        "homeStress": 4
+      },
+      "record": "{name}の門限を厳しくした。"
+    },
+    {
+      "label": "怒鳴って外出を禁止する",
+      "hint": "強く抑え込む。",
+      "effects": {
+        "rebellion": 9,
+        "delinquency": 7,
+        "parentAttachment": -7,
+        "homeStress": 8
+      },
+      "record": "{name}を怒鳴り、外出を禁止した。",
+      "flags": {
+        "delinquentPath": true
+      },
+      "discover": "非行傾向"
+    }
+  ]
+}

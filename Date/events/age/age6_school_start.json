@@ -1,0 +1,40 @@
+{
+  "id": "age6_school_start",
+  "phase": "age",
+  "minAge": 6,
+  "maxAge": 6,
+  "weight": 10,
+  "title": "小学校へ",
+  "text": "{name}は小学生になった。新しい教室、新しい人間関係が始まる。",
+  "choices": [
+    {
+      "label": "失敗しても自分でやらせる",
+      "hint": "自立と自己肯定感に影響する。",
+      "effects": {
+        "independence": 6,
+        "selfEsteem": 4,
+        "school": 2
+      },
+      "record": "小学校生活では、失敗しても{name}自身にやらせることを意識した。"
+    },
+    {
+      "label": "困らないよう全部確認する",
+      "hint": "安心は増えるが、親への依存が強まりやすい。",
+      "effects": {
+        "parentDependence": 7,
+        "independence": -4,
+        "school": 3
+      },
+      "record": "学校で困らないよう、持ち物や予定を毎日細かく確認した。"
+    },
+    {
+      "label": "学校のことは本人に任せる",
+      "hint": "距離をとる。",
+      "effects": {
+        "independence": 4,
+        "parentAttachment": -2
+      },
+      "record": "学校のことは{name}本人に任せることにした。"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "age3_playground",
+  "phase": "age",
+  "minAge": 3,
+  "maxAge": 4,
+  "weight": 8,
+  "title": "泣いている子",
+  "text": "公園で、{name}の近くに泣いている子がいる。{name}はその子をじっと見ている。",
+  "choices": [
+    {
+      "label": "「声をかけてみたら？」と促す",
+      "hint": "他人への関心を育てる。",
+      "effects": {
+        "kindness": 6,
+        "sociability": 3
+      },
+      "record": "泣いている子へ声をかけるよう{name}を促した。"
+    },
+    {
+      "label": "気にせず遊ばせる",
+      "hint": "そのまま自分の遊びを続ける。",
+      "effects": {
+        "independence": 1
+      },
+      "record": "泣いている子には関わらず、{name}を遊ばせた。"
+    },
+    {
+      "label": "自分がすぐ助けに行く",
+      "hint": "親が先に解決する。",
+      "effects": {
+        "parentDependence": 2,
+        "kindness": 2
+      },
+      "record": "{name}より先に、養育者が泣いている子を助けた。"
+    }
+  ]
+}
